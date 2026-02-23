@@ -11,7 +11,7 @@ def validar_id_usuario(id_usuario: str) -> None:
     # el patrón de 3-40 caracteres alfanuméricos, guion bajo o guion.
 
     if not re.fullmatch(r"[A-Za-z0-9_-]{3,40}", id_usuario):
-    raise ValueError("id_usuario inválido. Usa 3-40 caracteres alfanuméricos, _ o-")
+        raise ValueError("id_usuario inválido. Usa 3-40 caracteres alfanuméricos, _ o-")
 
 def construir_clave_usuario(id_usuario: str) -> str:
     # Construye y devuelve la clave Redis para un `id_usuario`.
