@@ -104,8 +104,8 @@ def menu() -> None:
             else:
                 print("Opción no reconocida")
 
-            except Exception as e:
-                print(f"ERROR: {e}")
+        except Exception as e:
+            print(f"ERROR: {e}")
 
 # Sección main del programa y códigos de salida adecuados
 
